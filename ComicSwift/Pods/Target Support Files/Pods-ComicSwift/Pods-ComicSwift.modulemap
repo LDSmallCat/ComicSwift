@@ -1,0 +1,6 @@
+framework module Pods_ComicSwift {
+  umbrella header "Pods-ComicSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
