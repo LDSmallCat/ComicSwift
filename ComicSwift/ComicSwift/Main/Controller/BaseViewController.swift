@@ -12,11 +12,22 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if #available(iOS 11.0, *) {
+            UIScrollView.appearance().contentInsetAdjustmentBehavior = .never
+        } else {
+            automaticallyAdjustsScrollViewInsets = false
+        }
+        
+        configUI()
+        loadData()
+        
         view.backgroundColor = UIColor.ld.random
+        
     }
     
-
+    func loadData() { }
+    func configUI() { }
+    deinit { print("\(self) deinit")}
     /*
     // MARK: - Navigation
 

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		030F2169D99853B9DE6A8BE1 /* Pods_ComicSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4363B1201FCF8C113BB068 /* Pods_ComicSwift.framework */; };
+		D202F25324B361A3000EF76A /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202F25224B361A3000EF76A /* BaseTableViewCell.swift */; };
+		D202F25524B361B5000EF76A /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202F25424B361B5000EF76A /* BaseCollectionViewCell.swift */; };
+		D202F25724B36266000EF76A /* BaseCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202F25624B36266000EF76A /* BaseCollectionReusableView.swift */; };
+		D202F25924B362A0000EF76A /* BaseTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202F25824B362A0000EF76A /* BaseTableViewHeaderFooterView.swift */; };
+		D202F25B24B371F6000EF76A /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202F25A24B371F6000EF76A /* IntExtension.swift */; };
 		D2417EB324AACA7600C8AAE1 /* Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2417EB224AACA7600C8AAE1 /* Closure.swift */; };
 		D243B03624B2106B0034D1FC /* NameSpaceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D243B03524B2106B0034D1FC /* NameSpaceProtocol.swift */; };
 		D243B03E24B21F290034D1FC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D243B03D24B21F290034D1FC /* StringExtension.swift */; };
@@ -37,6 +42,11 @@
 /* Begin PBXFileReference section */
 		4E8D8D2CECA37F458660A35E /* Pods-ComicSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicSwift.debug.xcconfig"; path = "Target Support Files/Pods-ComicSwift/Pods-ComicSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		BFA252AF7578FCF6EBF535DA /* Pods-ComicSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicSwift.release.xcconfig"; path = "Target Support Files/Pods-ComicSwift/Pods-ComicSwift.release.xcconfig"; sourceTree = "<group>"; };
+		D202F25224B361A3000EF76A /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		D202F25424B361B5000EF76A /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		D202F25624B36266000EF76A /* BaseCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionReusableView.swift; sourceTree = "<group>"; };
+		D202F25824B362A0000EF76A /* BaseTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		D202F25A24B371F6000EF76A /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		D2417EB224AACA7600C8AAE1 /* Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closure.swift; sourceTree = "<group>"; };
 		D243B03524B2106B0034D1FC /* NameSpaceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpaceProtocol.swift; sourceTree = "<group>"; };
 		D243B03824B2113A0034D1FC /* ComicSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ComicSwift-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -85,6 +95,37 @@
 				ED4363B1201FCF8C113BB068 /* Pods_ComicSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D202F24E24B35DC7000EF76A /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		D202F24F24B35DCE000EF76A /* C */ = {
+			isa = PBXGroup;
+			children = (
+				D2D19DCF24B2B4D30085DDE5 /* HomeViewController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		D202F25024B35E68000EF76A /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				D202F24E24B35DC7000EF76A /* V */,
+				D202F24F24B35DCE000EF76A /* C */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		D202F25124B35E73000EF76A /* Comic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Comic;
 			sourceTree = "<group>";
 		};
 		D2417EB124AACA1900C8AAE1 /* Test */ = {
@@ -137,6 +178,7 @@
 				D243B04524B238350034D1FC /* UIBarButtonItemExtension.swift */,
 				D243B04724B23A2E0034D1FC /* SnapkitExtension.swift */,
 				D2D19DD724B2B7FC0085DDE5 /* UITabBarControllerExtension.swift */,
+				D202F25A24B371F6000EF76A /* IntExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -165,7 +207,8 @@
 		D2D19DBF24B2B3EB0085DDE5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				D2D19DCF24B2B4D30085DDE5 /* HomeViewController.swift */,
+				D202F25124B35E73000EF76A /* Comic */,
+				D202F25024B35E68000EF76A /* HomePage */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -207,6 +250,10 @@
 			children = (
 				D2D19DCD24B2B4B90085DDE5 /* BaseView.swift */,
 				D2D19DDD24B2BCE60085DDE5 /* TabBar.swift */,
+				D202F25224B361A3000EF76A /* BaseTableViewCell.swift */,
+				D202F25424B361B5000EF76A /* BaseCollectionViewCell.swift */,
+				D202F25624B36266000EF76A /* BaseCollectionReusableView.swift */,
+				D202F25824B362A0000EF76A /* BaseTableViewHeaderFooterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -373,16 +420,21 @@
 				D2D19DC624B2B4790085DDE5 /* NavigationController.swift in Sources */,
 				D2DADB5924A2038400C5DFF2 /* ViewController.swift in Sources */,
 				D2D19DC424B2B45D0085DDE5 /* TabBarController.swift in Sources */,
+				D202F25524B361B5000EF76A /* BaseCollectionViewCell.swift in Sources */,
+				D202F25B24B371F6000EF76A /* IntExtension.swift in Sources */,
 				D2D19DDE24B2BCE60085DDE5 /* TabBar.swift in Sources */,
+				D202F25724B36266000EF76A /* BaseCollectionReusableView.swift in Sources */,
 				D243B04024B21FE70034D1FC /* UIColorExtension.swift in Sources */,
 				D2417EB324AACA7600C8AAE1 /* Closure.swift in Sources */,
 				D243B03E24B21F290034D1FC /* StringExtension.swift in Sources */,
 				D243B03624B2106B0034D1FC /* NameSpaceProtocol.swift in Sources */,
 				D2DADB5524A2038400C5DFF2 /* AppDelegate.swift in Sources */,
 				D2D19DD024B2B4D30085DDE5 /* HomeViewController.swift in Sources */,
+				D202F25924B362A0000EF76A /* BaseTableViewHeaderFooterView.swift in Sources */,
 				D2D19DDC24B2BB6B0085DDE5 /* ClassifyViewController.swift in Sources */,
 				D243B04224B22BE60034D1FC /* CGFloatExtension.swift in Sources */,
 				D2D19DD624B2B4E80085DDE5 /* MineViewController.swift in Sources */,
+				D202F25324B361A3000EF76A /* BaseTableViewCell.swift in Sources */,
 				D2D19DCE24B2B4B90085DDE5 /* BaseView.swift in Sources */,
 				D2D19DD824B2B7FC0085DDE5 /* UITabBarControllerExtension.swift in Sources */,
 				D2D19DDA24B2BB350085DDE5 /* BookViewController.swift in Sources */,
@@ -540,7 +592,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jfkj.ComicSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cld.ComicSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ComicSwift/Resources/ComicSwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -562,7 +614,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jfkj.ComicSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cld.ComicSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ComicSwift/Resources/ComicSwift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

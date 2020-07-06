@@ -14,7 +14,7 @@ class NavigationController: UINavigationController {
         super.viewDidLoad()
         navigationBar.prefersLargeTitles = true
         navigationBar.backgroundColor = UIColor.ld.theme
-        
+        navigationBar.isTranslucent = false
     }
     
 
